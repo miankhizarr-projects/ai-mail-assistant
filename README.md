@@ -92,10 +92,8 @@ To enable Gmail login and inbox access:
 4. Create an **OAuth 2.0 Client ID** (Web application).
 5. Add Authorized JavaScript Origins:
    - `http://localhost:3000`
-   - `https://mailassistant.khizar.pro`
 6. Add Authorized Redirect URIs:
    - `http://localhost:3000/auth/callback`
-   - `https://mailassistant.khizar.pro/auth/callback`
 7. Copy the **Client ID** and **Client Secret** into your `.env` file or Vercel Environment Variables.
 
 ---
