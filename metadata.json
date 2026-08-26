@@ -1,0 +1,6 @@
+{
+  "name": "AI Mail Assistant",
+  "description": "An AI-powered Gmail assistant agent with intelligent tool selection, email summarization, draft replies, and human-in-the-loop email management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,239 @@
+@import "tailwindcss";
+
+/* Utility to hide scrollbars */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Theme-aligned custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+  border: 1px solid #0f172a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Firefox scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1e293b #090d16;
+}
+
+/* Markdown response formatting styles */
+.markdown-body {
+  color: #e2e8f0;
+  font-size: 0.875rem;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  max-width: 100%;
+}
+
+.markdown-body p {
+  margin-bottom: 0.75rem;
+}
+
+.markdown-body p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  color: #f8fafc;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.markdown-body h1 {
+  font-size: 1.25rem;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 0.4rem;
+  color: #818cf8;
+}
+
+.markdown-body h2 {
+  font-size: 1.1rem;
+  color: #a5b4fc;
+}
+
+.markdown-body h3 {
+  font-size: 0.95rem;
+  color: #c7d2fe;
+}
+
+.markdown-body h4 {
+  font-size: 0.875rem;
+  color: #e0e7ff;
+}
+
+.markdown-body strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.markdown-body em {
+  color: #cbd5e1;
+  font-style: italic;
+}
+
+.markdown-body ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown-body ol {
+  list-style-type: decimal;
+  padding-left: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown-body li {
+  margin-bottom: 0.35rem;
+  line-height: 1.5;
+}
+
+.markdown-body li > ul,
+.markdown-body li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.markdown-body code {
+  background-color: #020617;
+  color: #a5b4fc;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.375rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.825em;
+  border: 1px solid #1e293b;
+}
+
+.markdown-body pre {
+  background-color: #020617;
+  padding: 0.85rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #1e293b;
+  overflow-x: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.85rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  color: #cbd5e1;
+  font-size: 0.825rem;
+  line-height: 1.5;
+}
+
+.markdown-body blockquote {
+  border-left: 3px solid #6366f1;
+  background-color: rgba(15, 23, 42, 0.6);
+  padding: 0.5rem 0.85rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: #94a3b8;
+  font-style: italic;
+  margin-bottom: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.markdown-body table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 0.75rem;
+  margin-bottom: 0.85rem;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid #334155;
+  display: block;
+  overflow-x: auto;
+}
+
+.markdown-body th,
+.markdown-body td {
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid #1e293b;
+  border-right: 1px solid #1e293b;
+  text-align: left;
+}
+
+.markdown-body th:last-child,
+.markdown-body td:last-child {
+  border-right: none;
+}
+
+.markdown-body tr:last-child td {
+  border-bottom: none;
+}
+
+.markdown-body th {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.725rem;
+  letter-spacing: 0.05em;
+}
+
+.markdown-body td {
+  background-color: #020617;
+  color: #cbd5e1;
+}
+
+.markdown-body tr:nth-child(even) td {
+  background-color: #090d16;
+}
+
+.markdown-body hr {
+  border: 0;
+  height: 1px;
+  background: #334155;
+  margin: 1.25rem 0;
+}
+
+.markdown-body a {
+  color: #818cf8;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  overflow-wrap: anywhere;
+  word-break: break-all;
+}
+
+.markdown-body a:hover {
+  color: #a5b4fc;
+}
+
+/* Ensure long URLs and links break properly in any container */
+a, .break-words-anywhere {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
